@@ -1,0 +1,15 @@
+{
+  "name": "knockout_electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "ebuild": "electron ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.5",
+    "eslint": "^4.6.0",
+    "knockout": "^3.4.2",
+    "webpack": "^3.5.5"
+  }
+}
