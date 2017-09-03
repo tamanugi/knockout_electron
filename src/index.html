@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/bundle.js"></script>
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" placeholder="Title..." data-bind="value: taskSummary">
+        <span class="addBtn" data-bind="click: addTask">Add</span>
+      </div>
+      
+      <ul data-bind="foreach: todoList">
+        <li data-bind="text: summary, css: {'checked': isDone}, click: $root.toggleDone"></li>
+      </ul>
+  </body>
+</html>
