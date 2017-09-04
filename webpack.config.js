@@ -6,12 +6,13 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/assets',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: 'dist'
   },
   // Configuration for dev server
   devServer: {
     contentBase: path.resolve(__dirname, './src'),
     port: 3000,
-  }
+  },
+  target: 'electron-renderer'
 };
