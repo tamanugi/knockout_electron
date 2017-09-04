@@ -9,7 +9,7 @@ function createWindow() {
   // BrowserWindowインスタンスを生成
   win = new BrowserWindow({width: 800, height: 600});
   // index.htmlを表示
-  win.loadURL(`file://${__dirname}/index.html`);
+  win.loadURL(`file://${__dirname}/src/index.html`);
   // デバッグするためのDevToolsを表示
   win.webContents.openDevTools();
   // ウィンドウを閉じたら参照を破棄
